@@ -60,6 +60,18 @@ $ jupyter-notebook
 >>> data["sepal_length"].head()
 ```
 
+* Afficher les premières données des colonnes *sepal_length*, *sepal_width*, *petal_length*, *petal_width*.
+
+```
+>>> data.loc[:, "sepal_length":"petal_width"].head()
+```
+
+* Afficher les données de la première ligne.
+
+```
+>>> data.iloc[0]
+```
+
 * Calculer la moyenne de la colonne *sepal_length*.
 
 ```
@@ -141,11 +153,9 @@ def evaluation(true_labels, pred_labels):
 	return (2*precision*recall) / (precision+recall)
 ```
 
+# Auteur
 
-
-
-
-
+Pierre-Antoine Jean (IMT Mines Alès).
 
 # Références
 
